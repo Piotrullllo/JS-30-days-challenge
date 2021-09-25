@@ -73,4 +73,10 @@ a{
         margin: 0;
     }
 }
+@media (max-height: 720px) and (min-width: 850px){
+    #container{
+        top: 0;
+        transform: translateY(0%) translateX(-50%); 
+    }
+}
 

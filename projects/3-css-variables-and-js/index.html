@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables and JS</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2>Update CSS Variables with <span class="hl">JS</span></h2>
+    <div class="controls">
+        <div class="control-section">
+            <label for="spacing">Spacing:</label>
+            <input type="range" name="spacing" min="0" max="100" value="10" data-sizing="px">
+        </div>
+        <div class="control-section">
+            <label for="blur">Blur:</label>
+            <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+        </div>
+        <div class="control-section">
+            <label for="base">Base color:</label>
+            <input type="color" class="color" name="base" value="#ffc600">
+        </div>
+    </div>
+    <div class="image-background">
+        <img src="https://picsum.photos/seed/picsum/800/600" alt="image-from-picsum">
+    </div>
+    <a class="backbtn" href="../../index.html">GO BACK</a>
+    <script src="js/main.js"></script>
+</body>
+</html>

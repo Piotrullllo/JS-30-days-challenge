@@ -58,6 +58,7 @@ h2{
 img{
     width: 500px;
     height: 400px;
+    max-width: 100%;
     margin: var(--spacing);
     background-color: var(--base);
     filter: blur(var(--blur));
@@ -73,13 +74,14 @@ img{
     color: white;
     text-decoration: none;
     padding: 10px;
-    background-color: #333366;
+    background-color: rgba(255,255,255, 0.2);
     border: 5px solid #808080;
     border-radius: 0 8px 0 0;
 }
 .image-background{
     background-color: var(--base);
     filter: blur(var(--blur));
+    max-width: 100%;
     width: 500px;
     height: 400px;
     margin: auto;

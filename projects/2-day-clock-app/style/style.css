@@ -29,13 +29,17 @@ body{
     transform-origin: 125px 125px;
 }
 .backbtn{
+    transition: all .1s;
     font-size: 30px;
     position: absolute;
     bottom: 0;
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 10px;
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.2);
     border: 5px solid white;
     border-radius: 0 8px 0 0;
+}
+.backbtn:hover{
+    background-color: rgba(255,255,255,0.4);
 }

@@ -78,6 +78,7 @@ body{
     text-decoration: none;
 }
 .backbtn{
+    transition: all .1s;
     font-size: 30px;
     position: fixed;
     bottom: 0;
@@ -88,4 +89,7 @@ body{
     background-color: rgba(255,255,255, 0.1);
     border: 5px solid rgba(87, 87, 87, 0.8);
     border-radius: 0 8px 0 0;
+}
+.backbtn:hover{
+    background-color: rgba(255,255,255,0.3);
 }

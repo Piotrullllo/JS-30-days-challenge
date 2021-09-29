@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000040;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+#container{
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+}
+input.search{
+    font-family: 'Gemunu Libre', sans-serif;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    font-size: 28px;
+    border: 6px solid silver;
+    border-radius: 6px;
+    outline: 0;
+
+}
+.suggestions{
+    margin-top: 10px;
+    list-style: none;
+    margin-bottom: 30px;
+}
+.suggestions > li{
+    background: white;
+    list-style: none;
+    border-bottom: 1px solid #D8D8D8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+.suggestions > li:first-child{
+    border-radius: 4px 4px 0 0;
+}
+.suggestions > li:last-child{
+    border-radius: 0 0 4px 4px;
+}
+span.population{
+    font-size: 15px;
+}
+.hl{
+    background-color: orange;
+}
+.suggestions li:nth-child(even) {
+    transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+    background: linear-gradient(to bottom,  #ff0000 0%,#EF0000 100%);
+}
+  
+.suggestions li:nth-child(odd) {
+    transform: perspective(100px) rotateX(-3deg) translateY(3px);
+    background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
+}
+.backbtn{
+    transition: all .1s;
+    font-size: 30px;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.2);
+    border: 5px solid white;
+    border-radius: 0 8px 0 0;
+}
+.backbtn:hover{
+    background-color: rgba(255,255,255,0.6);
+}

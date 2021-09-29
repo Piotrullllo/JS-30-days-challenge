@@ -67,6 +67,7 @@ img{
     color: var(--base);
 }
 .backbtn{
+    transition: all .1s;
     font-size: 30px;
     position: fixed;
     bottom: 0;
@@ -86,4 +87,6 @@ img{
     height: 400px;
     margin: auto;
 }
-
+.backbtn:hover{
+    background-color: rgba(255,255,255,0.4);
+}

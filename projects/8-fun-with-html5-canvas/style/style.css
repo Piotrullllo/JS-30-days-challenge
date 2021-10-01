@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;  
+    font-size: 20px;  
+}
+body{
+    font-family: 'Gemunu Libre', sans-serif;
+    background-color: #333333;
+}
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+nav.tools{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 140px;
+    padding-bottom: 15px;
+    background-color: cornflowerblue;
+    z-index: 999;
+}
+.btns{
+    position: relative;
+    left: 10px;
+}
+.btns > button{
+    display: block;
+    width: 115px;
+    height: 50px;
+    margin-top: 10px;
+}
+.thickness{
+    margin-top: 15px;
+    text-align: center;
+}
+.thickness input[type="range"]{
+    margin-top: 4px;
+    width: 100px;
+}
+.colors{
+    text-align: center;
+}
+.colors input[type="color"]{
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+input[type="color"]{
+    border-radius: 1px;
+    height: 30px;
+    width: 100px;
+}
+canvas{
+    background-color: white;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.backbtn{
+    transition: all .1s;
+    font-size: 30px;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: (255,255,255 0.3);
+    border: 5px solid white;
+    border-radius: 0 8px 0 0;
+}
+.backbtn:hover{
+    background-color: white;
+    color: black;
+}

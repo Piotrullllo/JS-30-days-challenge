@@ -70,10 +70,11 @@ span.population{
     color: white;
     text-decoration: none;
     padding: 10px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: black;
     border: 5px solid white;
     border-radius: 0 8px 0 0;
 }
 .backbtn:hover{
-    background-color: rgba(255,255,255,0.6);
+    background-color: white;
+    color: black;
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Canvas</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <nav class="tools">
+        <div class="btns">
+            <button disabled value="br">Brush</button>
+            <button value="er">Eraser</button>
+        </div>
+        <div class="thickness">
+            <label for="thickrange">Thickness:</label>
+            <input type="range" name="thickrange" min="5" max="150" value="20" data-sizing="px">
+        </div>
+        <div class="colors">
+            <label for="mainclr">Main color:</label>
+            <input type="color" class="color" name="mainclr" value="#000000">
+            <label for="secClr">Secondary color:</label>
+            <input type="color" class="color" name="secClr" value="#ffffff">
+        </div>
+    </nav>
+    <a class="backbtn" href="../../index.html">GO BACK</a>
+    <canvas id="draw" width="800" height="600"></canvas>
+    <script src="js/main.js"></script>
+</body>
+</html>

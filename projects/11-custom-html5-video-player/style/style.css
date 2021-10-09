@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;  
+    font-size: 20px;  
+}
+
+body{
+    background-color: #242424;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.player{
+    width: 900px;
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.player__video{
+    width: 100%;
+}
+
+.player__button{
+    background: none;
+    border: 0;
+    line-height: 1;
+    text-align: center;
+    color: white;
+    outline: 0;
+    padding: 10px;
+    cursor: pointer;
+    max-width: 50px;
+}
+
+.player__button:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+.player__controls{
+    display: flex;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    bottom: 0;
+    width: 100%;
+    transform: translateY(100%) translateY(-10px);
+    transition: all .2s;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.player:hover .player__controls{
+    transform: translateY(0);
+}
+.progress{
+    border-radius: 100px;
+    width: 100%;
+    height: 10px;
+}
+.progress__filled{
+    width: 100%;
+    background-color: red;
+    height: 10px;
+}
+.backbtn{
+    font-family: 'Gemunu Libre', sans-serif;
+    transition: all .1s;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: (255,255,255 0.3);
+    border: 5px solid white;
+    border-radius: 0 0 8px 0;
+}
+.backbtn:hover{
+    background-color: white;
+    color: black;
+}

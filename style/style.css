@@ -30,17 +30,21 @@ header h1{
 }
 main{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
 .links{
-    margin: 25px;
+    width: 300px;
+    margin: 12px;
+}
+.links:first-child{
+    margin-left: 50px;
 }
 .links a{
     display: block;
     font-size: 24px;
-    padding: 12px 0;
+    padding: 10px 0;
 }
 footer h2{
     text-align: center;
@@ -71,9 +75,13 @@ a{
     }
     .links{
         margin: 0;
+        width: 100%;
+    }
+    .links:first-child{
+        margin: 0;
     }
 }
-@media (max-height: 720px) and (min-width: 850px){
+@media (max-height: 800px) and (min-width: 850px){
     #container{
         top: 0;
         transform: translateY(0%) translateX(-50%); 

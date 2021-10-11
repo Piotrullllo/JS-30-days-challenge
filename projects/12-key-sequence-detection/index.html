@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array cardio - part 1</title>
+    <title>Key sequence detection</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet"> 
@@ -14,7 +14,11 @@
             background-color: #242424;
             color: white;
             font-family: 'Gemunu Libre', sans-serif;
-            font-size: 20px;
+            font-size: 24px;
+            transition: all .8s;
+        }
+        p, p a{
+            transition: all 0.5s;
         }
         a{
             color: cyan;
@@ -22,10 +26,16 @@
         a:hover{
             color: #00c3dd;
         }
+        .glitchedText{
+            text-shadow: 14px 10px 0px #008888, -14px -10px 0px #aa0000; 
+        }
     </style>
 </head>
 <body>
-    <p>> Press F12 to open the console or <a href="../../index.html">click here to go back</a></p>
+    <p>> Find secret code using console inspector (F12)</p>
+    <p></p>
+    <p></p>
+    <p>> <a href="../../index.html">Click here to go back</a></p>
     <script src="js/main.js"></script>
 </body>
 </html>

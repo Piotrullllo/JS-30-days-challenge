@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;  
+}
+body{
+    background-color: coral;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+#container{
+    max-width: 800px;
+    background-color: white;
+    margin: 40px auto;
+    padding: 30px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+#container h1{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+#container p{
+    font-family: sans-serif;
+    margin: 15px 0 5px;
+    text-align: justify;
+}
+.float-left{
+    float: left;
+    margin: 8px 10px 0 0;
+    transition: all .25s;
+    opacity: 1;
+    transform: translateX(0);
+}
+.float-right{
+    float: right;
+    margin: 8px 0 0 10px;
+    transition: all .25s;
+    opacity: 1;
+    transform: translateX(0);
+}
+.hide-left{
+    opacity: 0;
+    transform: translateX(-100%);
+}
+.hide-right{
+    transform: translateX(100%);
+    opacity: 0;
+}
+#container img{
+    background-color: silver;
+}
+.backbtn{
+    transition: all .25s;
+    font-size: 30px;
+    position: fixed;
+    bottom: 0;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    background-color: (255,255,255 0.5);
+    border: 5px solid black;
+    border-radius: 0 8px 0 0;
+}
+.backbtn:hover{
+    background-color: white;
+    color: black;
+    border-color: dimgrey;
+}
+
+
+@media (max-width: 500px) {
+    #container{
+        margin: 0;
+        padding: 15px;
+    }
+    #container p{
+        font-size: 14px;
+        text-align: center;
+    }
+    #container .pLeft{
+        text-align: left;
+    }
+    #container .pRight{
+        text-align: right;
+    }
+    #container img{
+        width: 200px;
+        height: 160px;
+    }
+}

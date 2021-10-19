@@ -7,9 +7,9 @@ let j = 0;
 paragraphs[0].setAttribute("secretCode", theCode.join(""));
 
 function changeBackground(){
-    let r = Math.floor(Math.random() * 256);
-    let g = Math.floor(Math.random() * 256);
-    let b = Math.floor(Math.random() * 256);
+    let r = Math.floor(Math.random() * 128);
+    let g = Math.floor(Math.random() * 128);
+    let b = Math.floor(Math.random() * 128);
     document.querySelector("body").style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 }
 

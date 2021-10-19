@@ -64,6 +64,7 @@ body{
     background-color: (255,255,255 0.5);
     border: 5px solid black;
     border-radius: 0 8px 0 0;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 .backbtn:hover{
     background-color: white;

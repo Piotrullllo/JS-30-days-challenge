@@ -12,7 +12,6 @@ function detectScrolling(e){
     if(lastKnownScrollPosition < window.scrollY){
         pics.forEach(pic => {
             if(pic.getBoundingClientRect().y <= (Math.ceil(window.innerHeight/1.5))){
-                console.log("wysunięcie")
                 if(pic.classList.contains('float-left')){
                     pic.classList.remove('hide-left');
                 } else {
@@ -23,7 +22,6 @@ function detectScrolling(e){
     } else {
         pics.forEach(pic => {
             if(pic.getBoundingClientRect().y >= Math.ceil(window.innerHeight/1.8)){
-                console.log("wsunięcie")
                 if(pic.classList.contains('float-left')){
                     pic.classList.add('hide-left');
                 } else {

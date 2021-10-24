@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(6,68,160);
+    background: linear-gradient(180deg, rgba(6,68,160,1) 5%, rgba(0,255,201,1) 100%); 
+    font-family: 'Gemunu Libre', sans-serif;
+}
+.text{
+    color: white;
+    font-size: 72px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-transform: uppercase;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%) rotate(-20deg);
+}
+.backbtn{
+    transition: all .25s;
+    font-size: 30px;
+    position: fixed;
+    bottom: 0;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    background-color: (255,255,255 0.5);
+    border: 5px solid rgba(0,0,0,0.2);
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: 0 8px 0 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.backbtn:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border-color: dimgrey;
+}
+@media (max-width: 400px){
+    .text{
+        font-size: 58px;
+        width: 300px;
+    }
+}

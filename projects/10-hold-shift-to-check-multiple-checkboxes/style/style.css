@@ -58,3 +58,11 @@ input:checked + p{
     background-color: white;
     color: black;
 }
+@media (max-width: 600px) and (max-height: 630px){
+    .backbtn{
+        top: 0;
+        right: 0;
+        border-radius: 0 0 0 8px;
+        height: 35px;
+    }
+}

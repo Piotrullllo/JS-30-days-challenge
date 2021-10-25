@@ -16,7 +16,8 @@ My work is available here: https://piotrullllo.github.io/JS-30-days-challenge/ S
 - [Unsplash](https://unsplash.com)
     - Photo from projects menu by [Florian Olivio](https://unsplash.com/@florianolv?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText),
     - Photo from Drum Kit App project by [Matthijs Smit](https://unsplash.com/@matthijssm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText),
-    - Photo from fifteenth project by [Jay Wennington](https://unsplash.com/@jaywennington?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+    - Photo from fifteenth project by [Jay Wennington](https://unsplash.com/@jaywennington?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText),
+    - Photo from seventeenth project by [John Matychuk](https://unsplash.com/@john_matychuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
 - Taco icon made by [Freepik](https://www.freepik.com) from [Flaticon](www.flaticon.com),
 - [Big Buck Bunny](https://peach.blender.org),
 - [Favicon Generator](https://www.favicon.cc).

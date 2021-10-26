@@ -35,6 +35,7 @@ body{
     padding: 15px 0;
 }
 .add-items input[type="submit"]{
+    cursor: pointer;
     font-size: 16px;
     padding: 10px 15px;
     margin-left: 4px;
@@ -64,6 +65,7 @@ body{
     border-bottom: 2px solid rgba(127,127,127, 0.7);
 }
 .plates input[type="checkbox"]{
+    cursor: pointer;
     vertical-align:middle;
     width: 30px;
     height: 20px;
@@ -71,6 +73,7 @@ body{
 }
 .plates label{
     vertical-align:middle;
+    cursor: pointer;
 }
 
 .plates input[type="checkbox"]:checked{
@@ -91,6 +94,7 @@ body{
 }
 
 .plates .delete-button{
+    cursor: pointer;
     font-family: 'Gemunu Libre', sans-serif;
     position: absolute;
     font-size: 16px;

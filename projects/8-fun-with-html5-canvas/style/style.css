@@ -34,6 +34,7 @@ nav.tools{
     width: 115px;
     height: 50px;
     margin-top: 10px;
+    cursor: pointer;
 }
 .thickness{
     margin-top: 15px;
@@ -42,6 +43,7 @@ nav.tools{
 .thickness input[type="range"]{
     margin-top: 4px;
     width: 100px;
+    cursor: pointer;
 }
 .colors{
     text-align: center;
@@ -50,6 +52,7 @@ nav.tools{
     display: block;
     margin: 0 auto;
     margin-top: 5px;
+    cursor: pointer;
 }
 input[type="color"]{
     border-radius: 1px;

@@ -31,6 +31,7 @@ body{
     border-bottom: none;
 }
 .item input[type="checkbox"]{
+    cursor: pointer;
     margin: 20px;
 }
 p {

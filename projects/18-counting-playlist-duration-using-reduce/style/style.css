@@ -29,6 +29,7 @@ body{
     border-radius: 9px;
     background-color: #111;
     color: white;
+    cursor: pointer;
 }
 .counterContainer button:hover{
     background-color: #444;

@@ -1,27 +1,21 @@
 function calculateVideosDuration(){
     const videos = document.querySelectorAll(".videos li"); //.ytd-thumbnail .ytd-thumbnail-overlay-time-status-renderer for YouTube;
     const secondArr = [];
-    const minuteArr = [];
-    const hourArr = [];
     videos.forEach(video =>{
         let vidLength = video.dataset.time.replace(/\s+/g, ''); //video.textContent.replace(/\s+/g, '') for Youtube
         const secs = vidLength.substring(vidLength.length - 2);
         const mins = vidLength.substring(vidLength.length - 5, vidLength.length - 3);
         const hour = vidLength.substring(0, vidLength.length - 6);
         secondArr.push(Number(secs));
-        minuteArr.push(Number(mins));
-        hourArr.push(Number(hour));
+        secondArr.push(Number(mins)*60);
+        secondArr.push(Number(hour)*3600);
     });
 
-    let seconds = secondArr.reduce(function(totalSec, currentVid){
-        return totalSec + currentVid;
+    let seconds = secondArr.reduce(function(totalSec, currentSec){
+        return totalSec + currentSec;
     });
-    let minutes = minuteArr.reduce(function(totalMin, currentVid){
-        return totalMin + currentVid;
-    });
-    let hours = hourArr.reduce(function(totalHour, currentVid){
-        return totalHour + currentVid;
-    });
+    let minutes = 0;
+    let hours = 0;
    
     function addZero(val){
         if(val < 10){

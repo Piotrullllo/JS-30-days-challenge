@@ -30,10 +30,9 @@ let maxBlue = 255;
 function resizeCanvas(){
     if(window.orientation == 0){
         ctx.canvas.width = window.innerWidth;
-        ctx.canvas.height = window.innerWidth;
+        ctx.canvas.height = (window.innerWidth/3)*4;
     } else {
         if(window.innerWidth <= 800){
-            console.log(window.orientation)
             if(window.orientation == 90 || window.orientation == -90){
                 ctx.canvas.width  = (window.innerHeight/3)*4;
                 ctx.canvas.height = window.innerHeight;

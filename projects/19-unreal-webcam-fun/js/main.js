@@ -28,12 +28,23 @@ let maxGreen = 255;
 let maxBlue = 255;
 
 function resizeCanvas(){
-    if(window.innerWidth <= 800){
-        ctx.canvas.width  = window.innerWidth;
-        ctx.canvas.height = (window.innerWidth/4)*3;
+    if(window.orientation == 0){
+        ctx.canvas.width = window.innerWidth;
+        ctx.canvas.height = window.innerWidth;
     } else {
-        ctx.canvas.width  = 800;
-        ctx.canvas.height = 600;
+        if(window.innerWidth <= 800){
+            console.log(window.orientation)
+            if(window.orientation == 90 || window.orientation == -90){
+                ctx.canvas.width  = (window.innerHeight/3)*4;
+                ctx.canvas.height = window.innerHeight;
+            } else {
+                ctx.canvas.width  = window.innerWidth;
+                ctx.canvas.height = (window.innerWidth/4)*3;
+            }
+        } else {
+            ctx.canvas.width  = 800;
+            ctx.canvas.height = 600;
+        }
     }
 }
 
@@ -168,3 +179,4 @@ toggleGreenScreen.addEventListener('click',() => {
     if(greenScreenMode)toggleGreenScreen.innerHTML="Disable greenscreen";
     else toggleGreenScreen.innerHTML="Enable greenscreen"
 });
+window.addEventListener("orientationchange", resizeCanvas);

@@ -19,6 +19,7 @@ My work is available here: https://piotrullllo.github.io/JS-30-days-challenge/ S
     - Photo from fifteenth project by [Jay Wennington](https://unsplash.com/@jaywennington?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText),
     - Photo from seventeenth project by [John Matychuk](https://unsplash.com/@john_matychuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
 - Taco icon made by [Freepik](https://www.freepik.com) from [Flaticon](www.flaticon.com),
+- Camera sound was taken from [SoundJay](https://www.soundjay.com),
 - [Big Buck Bunny](https://peach.blender.org),
 - [Favicon Generator](https://www.favicon.cc).
   

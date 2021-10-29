@@ -83,7 +83,7 @@ a{
         margin: 0;
     }
 }
-@media (max-height: 800px) and (min-width: 850px){
+@media (max-height: 860px) and (min-width: 850px){
     #container{
         top: 0;
         transform: translateY(0%) translateX(-50%); 

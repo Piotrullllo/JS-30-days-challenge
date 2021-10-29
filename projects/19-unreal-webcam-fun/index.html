@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unreal Webcam Fun</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&display=swap" rel="stylesheet">  
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico"/>
+</head>
+<body>
+    <div id="container">
+        <video class="video" autoplay muted></video>
+        <canvas class="canvas"></canvas>
+        <button class="takePht">Take Photo</button>
+        <div class="photos"></div>
+        <div class="controls">
+            <fieldset>
+                <legend>Filter:</legend>
+                <label for="red">Red:</label>
+                <input type="range" min="-127" max="127" value="0" name="red">
+                <label for="green">Green:</label>
+                <input type="range" min="-127" max="127" value="0" name="green">
+                <label for="blue">Blue:</label>
+                <input type="range" min="-127" max="127" value="0" name="blue">
+            </fieldset>
+            <button class="toggleGhosting">Enable Ghosting</button>
+            <fieldset>
+                <legend>RGB splitting:</legend>
+                <label for="redoffset">Red Offset:</label>
+                <input type="range" min="-800" max="0" value="0" step="5" name="redoffset">
+                <label for="greenoffset">Green Offset:</label>
+                <input type="range" min="-800" max="0" value="0" step="5" name="greenoffset">
+                <label for="blueoffset">Blue Offset:</label>
+                <input type="range" min="-800" max="0" value="0" step="5" name="blueoffset">
+            </fieldset>
+            <fieldset>
+                <legend>Green screen simulation:</legend>
+                <button class="greenscr">Enable greenscreen</button>
+                <br>
+                <label for="minRed">Min Red::</label>
+                <input type="range" min="0" max="255" value="0" name="minRed">
+                <label for="minGreen">Min Green:</label>
+                <input type="range" min="0" max="255" value="0" name="minGreen">
+                <label for="minBlue">Min Blue:</label>
+                <input type="range" min="0" max="255" value="0" name="minBlue">
+                <br>
+                <label for="maxRed">Max Red:</label>
+                <input type="range" min="0" max="255" value="0" name="maxRed">
+                <label for="maxBlue">Max Green:</label>
+                <input type="range" min="0" max="255" value="0" name="maxBlue">
+                <label for="maxGreen">Max Blue:</label>
+                <input type="range" min="0" max="255" value="0" name="maxGreen">
+            </fieldset>
+        </div>
+        <a class="backbtn" href="../../index.html">GO BACK</a>
+        <script defer src="js/main.js"></script>
+    </div>
+</body>
+</html>

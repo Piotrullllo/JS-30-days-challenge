@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Gemunu Libre', sans-serif;
+    background-color: #333333;
+    color: white;
+}
+#container{
+    margin-top: 30px;
+    position: absolute;
+    width: 800px;
+    border: 1px solid black;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-bottom: 70px;
+}
+.video{
+    width: 1px;
+}
+.canvas{
+    margin-top: -18px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+.takePht{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.toggleGhosting{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.greenscr{
+    margin-bottom: 20px;
+}
+.photos{
+    background-color: gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+img{
+    margin: 5px 9px;
+    width: 180px;
+    height: 135px;
+}
+input{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+fieldset{
+    padding: 15px 0;
+}
+button{
+    font-size: 16px;
+    font-family: 'Gemunu Libre', sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    background-color: #111111;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #555555;
+}
+.backbtn{
+    transition: all .25s;
+    font-size: 30px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    background-color: (255,255,255 0.5);
+    border: 5px solid rgba(255,255,255,0.6);
+    border-radius: 8px 0 0 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.backbtn:hover{
+    background-color: rgba(255,255,255,0.8);
+    border-color: dimgrey;
+}
+@media (max-width: 800px) {
+    #container{
+        margin-top: 0;
+        position: absolute;
+        left:0;
+        transform: translateX(0);
+        width: 100%;
+    }
+    input{
+        display: block;
+        width: 100%;
+    }
+}
+@media (max-width: 400px){
+    img{
+        width: 100%;
+        height: calc((100%/4)*3)
+    }
+}

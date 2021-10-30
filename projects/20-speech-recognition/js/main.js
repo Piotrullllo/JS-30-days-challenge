@@ -7,10 +7,13 @@ let recognition;
 let i = 0;
 let j = 0;
 
-recognition = new webkitSpeechRecognition();
-recognition.continuous = true;
-recognition.interimResults = true;
-
+if('SpeechRecognition' in window || 'webkitSpeechRecognition' in window){
+    recognition = new webkitSpeechRecognition();
+    recognition.continuous = true;
+    recognition.interimResults = true;
+} else {
+    wordBox.innerHTML = "Unsupported browser";
+}
 
 recognition.onstart = () => {
     if(i == 0)wordBox.innerHTML = "";

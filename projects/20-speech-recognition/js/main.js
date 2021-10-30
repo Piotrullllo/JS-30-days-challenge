@@ -4,8 +4,8 @@ const clearBtn = document.querySelector(".clear");
 
 let toggleMode = false;
 let recognition;
-let i = 0;
-let j = 0;
+let paragraphIndex = 0;
+let detectionIndex = 0;
 
 if('SpeechRecognition' in window || 'webkitSpeechRecognition' in window){
     recognition = new webkitSpeechRecognition();
@@ -16,32 +16,32 @@ if('SpeechRecognition' in window || 'webkitSpeechRecognition' in window){
 }
 
 recognition.onstart = () => {
-    if(i == 0)wordBox.innerHTML = "";
+    if(paragraphIndex == 0)wordBox.innerHTML = "";
     let paragraph = document.createElement('p');
-    paragraph.classList.add(`recognition-${i}`)
+    paragraph.classList.add(`recognition-${paragraphIndex}`)
     wordBox.appendChild(paragraph);
 }
 recognition.onend = () => {
-    j = 0;
+    detectionIndex = 0;
 }
 
 recognition.onresult = function(event){
-    let thisPar = document.querySelector(`.recognition-${i}`);
-    thisPar.innerHTML = event.results[j][0].transcript;
+    let thisPar = document.querySelector(`.recognition-${paragraphIndex}`);
+    thisPar.innerHTML = event.results[detectionIndex][0].transcript;
     thisPar.classList.add("grayed");
-    if(event.results[j].isFinal){
-        thisPar.innerHTML = event.results[j][0].transcript;
+    if(event.results[detectionIndex].isFinal){
+        thisPar.innerHTML = event.results[detectionIndex][0].transcript;
         thisPar.classList.remove("grayed");
-        i++;
-        j++;
+        paragraphIndex++;
+        detectionIndex++;
         let paragraph = document.createElement('p');
-        paragraph.classList.add(`recognition-${i}`)
+        paragraph.classList.add(`recognition-${paragraphIndex}`)
         wordBox.appendChild(paragraph);
     }
 };
 
 function clearDiv(){
-    i = 0;
+    paragraphIndex = 0;
     wordBox.innerHTML = "<p>Press the button below and say something...</p>"
 }
 

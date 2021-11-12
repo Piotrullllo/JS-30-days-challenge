@@ -39,10 +39,6 @@ function speakEnd(){
 
 function speak(){
     let selectedOption = voiceList.selectedOptions[0].getAttribute('data-name');
-    if(selectedOption == "null"){
-        alert("No voice selected");
-        return;
-    }
     speakBtn.removeEventListener('click', speak);
     let speakThis = new SpeechSynthesisUtterance(text.value);
     voices.forEach(voice => {

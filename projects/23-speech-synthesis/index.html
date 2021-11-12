@@ -15,7 +15,7 @@
     <div id="container">
         <h1>The Voiceinator 5000</h1>
         <select name="voice" id="voice">
-            <option value="null" data-name="null" selected disabled>Select a Voice</option>
+            <option selected disabled>Select a Voice</option>
         </select>
         <div class="ranges">
             <label for="rate">Rate: </label>
@@ -23,7 +23,7 @@
             <label for="pitch">Pitch: </label>
             <input type="range" id="pitch" min="0" step="0.1" value="1" max="1.5">
         </div>
-        <textarea name="text" id="text"></textarea>
+        <textarea name="text" id="text">I love JavaScript ❤</textarea>
         <div class="buttons">
             <button id="speak">Speak</button>
             <button id="stop" disabled>Stop</button>

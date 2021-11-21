@@ -72,7 +72,3 @@ function checkboxCheck(id, check){
 
 window.addEventListener('load', reloadItems);
 addItems.addEventListener('submit', createItem);
-
-
-
-//Ikonka taco

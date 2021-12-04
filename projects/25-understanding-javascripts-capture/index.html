@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Javascript's capture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet"> 
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico"/>
+    <style>
+        *,
+        *::before,
+        *::after {
+            -webkit-box-sizing: inherit;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #242424;
+            color: white;
+            font-family: 'Gemunu Libre', sans-serif;
+            font-size: 18px;
+        }
+        div{
+            width: 100%;
+            padding: 100px 15%;
+        }
+        .one{
+            background-color: thistle;
+        }
+        .two{
+            background-color: mistyrose;
+        }
+        .three{
+            background-color: coral;
+        }
+        a{
+            color: cyan;
+        }
+        a:hover{
+            color: #00c3dd;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="two">
+            <div class="three"><p>> Press F12 to open the console or <a href="../../index.html">click here to go back</a></p></div>
+        </div>
+    </div>
+    <script>
+        function one(event){
+            console.log("one");
+        } 
+        function two(event){
+            event.stopPropagation(); //stops propragation on the third element, preventing event listener on hover of divs .one and .two;
+            console.log("two");
+        } 
+        function three(event){
+            event.stopPropagation();
+            console.log("three");
+        } 
+        document.querySelector(".one").addEventListener("mouseover", one, {once: true}, useCapture = true); /*useCapture option switches bubbling(target->root) and capture(root->target) mode; */
+        document.querySelector(".two").addEventListener("mouseover", two, {once: true}, useCapture = true);
+        document.querySelector(".three").addEventListener("mouseover", three, {once: true}, useCapture = true); 
+    </script>
+</body>
+</html>

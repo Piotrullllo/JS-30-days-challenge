@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Gemunu Libre', sans-serif;
+    background-image: url(https://picsum.photos/id/1048/2048/1080);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.dropdownBackground{
+    transition: transform .25s;
+    position: absolute;
+    max-width: 350px;
+    transform: translateX(-100%);
+}
+.arrow{
+    z-index: 999;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid white;
+}
+.dropdownContent{
+    border-radius: 10px;
+    background-color: white;
+    z-index: 1;
+    display: block;
+}
+.navigation{
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+}
+.navigation>li{
+    margin-right: 40px;
+    font-size: 18px;
+    padding: 15px 20px;
+    display: inline-block;
+    transition: .25s background-color;
+    cursor: pointer;
+}
+.hiddenContent{
+    display: none;
+}
+.navigation>li:last-child{
+    margin-right: 0;
+}
+.navigation>li:hover{
+    background-color: gray;
+}
+.navigation>li>a{
+    color: white;
+    text-decoration: none;
+    transition: .25s color;
+}
+.navigation>li:hover>a{
+    color: black;
+}
+.pfp{
+    float: left;
+    width: 100px;
+    margin: 20px 15px;
+}
+.about{
+    padding: 10px 5px;
+}
+.courses, .socials{
+    padding: 10px;
+    list-style-type: none;
+}
+.courses li{
+    padding: 10px 5px;
+    border-bottom: 1px solid black;
+}
+.courses li:hover{
+    background-color: black;
+    color: white;
+}
+.socials li{
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.fb{
+    background-color: #5d7bba;
+}
+.tw{
+   background-color: #1da1f2; 
+}
+.in{
+    background-color: #5851DB;
+}
+.sc{
+    background-color: #fffc00;
+}
+.fb:hover{
+    background-color: #3b5998;
+}
+.tw:hover{
+   background-color: #0b80d0; 
+}
+.in:hover{
+    background-color: #3630B9;
+}
+.sc:hover{
+    background-color: #ddda00;
+}
+.backbtn{
+    font-family: 'Gemunu Libre', sans-serif;
+    transition: all .25s;
+    font-size: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    background-color: (255,255,255 0.5);
+    border: 5px solid dimgrey;
+    border-radius: 0 8px 0 0;
+    border-bottom: 0;
+    border-left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.backbtn:hover{
+    background-color: rgba(255,255,255,0.8);
+    border-color: gray;
+}
+

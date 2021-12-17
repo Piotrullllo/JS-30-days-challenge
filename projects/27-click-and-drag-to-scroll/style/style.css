@@ -24,7 +24,7 @@ body{
     width: 90vw;
     height: 80vh;
     white-space: no-wrap;
-    overflow-x: hidden;
+    overflow-x: scroll;
     overflow-y: hidden;
     display: flex;
     align-items: center;

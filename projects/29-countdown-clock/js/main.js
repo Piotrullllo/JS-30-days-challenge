@@ -2,6 +2,8 @@ const listItems = document.querySelectorAll(".options li a");
 const ul = document.querySelector(".options ul");
 const inputMins = document.querySelector(".options input");
 const countdownTimer = document.querySelector(".countdown");
+const beBackAt = document.querySelector(".be-back-at");
+const container = document.querySelector(".container");
 const toggle = document.querySelector(".options .toggle");
 const clock = [document.querySelector(".seconds"), document.querySelector(".minutes"), document.querySelector(".hours")];
 
@@ -10,10 +12,13 @@ let countdownTime = [0,0,0]
 let hours = 0;
 let minutes = 0;
 let seconds = 0;
+let blinking;
+let blnk = false;
 let countingDown;
 
 function getDataFromInput(mins){
     window.clearInterval(countingDown);
+    stopBlinking();
     countdownTime[2] = Math.floor(mins/60);
     countdownTime[1] = mins%60;
     countdownTime[0] = 0;
@@ -22,8 +27,21 @@ function getDataFromInput(mins){
     countingDown = window.setInterval(countdown, 1000);
 }
 
+function stopBlinking(){
+    const button = document.querySelector(".stop-blinking");
+    console.log(button)
+    if(button != null){
+        window.clearInterval(blinking);
+        beBackAt.style.color = "black";
+        countdownTimer.style.color = "black";
+        button.removeEventListener("click", stopBlinkingUsingButton);
+        button.remove();
+    }
+}
+
 function getDataFromLink(){
     window.clearInterval(countingDown);
+    stopBlinking();
     countdownTime[2] = Math.floor(parseInt(this.getAttribute("data-minutes"))/60);
     countdownTime[1] = parseInt(this.getAttribute("data-minutes"))%60;
     countdownTime[0] = parseInt(this.getAttribute("data-seconds"));
@@ -75,6 +93,18 @@ function setTimer(){
     countdownTimer.innerHTML = `${countdownTime[2]}:${actualCountdown[1]}:${actualCountdown[0]}`
 }
 
+function blink(){
+    if(!blnk){
+        countdownTimer.style.color = "red";
+        beBackAt.style.color = "black";
+        blnk = !blnk;
+    } else {
+        countdownTimer.style.color = "black";
+        beBackAt.style.color = "red";
+        blnk = !blnk;
+    }
+}
+
 function countdown(){
     if(countdownTime[0] > 0){
         countdownTime[0]--;
@@ -86,10 +116,24 @@ function countdown(){
         countdownTime[1] = 59;
         countdownTime[0] = 59;
     }
-        else {
+    else {
         window.clearInterval(countingDown);
+        let stopBlnk = document.createElement("button");
+        stopBlnk.innerHTML = "Stop blinking";
+        stopBlnk.classList.add("stop-blinking");
+        stopBlnk.addEventListener("click", stopBlinkingUsingButton);
+        container.appendChild(stopBlnk);
+        blinking = window.setInterval(blink, 200);
     }
     setTimer();
+}
+
+function stopBlinkingUsingButton(){
+    this.removeEventListener("click", stopBlinkingUsingButton);
+    window.clearInterval(blinking);
+    beBackAt.style.color = "black";
+    countdownTimer.style.color = "black";
+    this.remove();
 }
 
 function handleToggle(){

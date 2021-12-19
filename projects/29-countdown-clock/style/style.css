@@ -52,14 +52,32 @@ nav{
 }
 .countdown{
     font-size: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    transition: color .150s;
 }
 .be-back-at{
     font-size: 30px;
+    margin-bottom: 20px;
+    transition: color .150s;
 }
 input{
     font-family: 'Gemunu Libre', sans-serif;
     margin-right: 20px;
+}
+.stop-blinking{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    color: white;
+    transition: all .25s;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.stop-blinking:hover{
+    background-color: rgba(0,255,255,0.5);
+    border-radius: 10px;
+    color: black;
 }
 .backbtn{
     transition: all .25s;

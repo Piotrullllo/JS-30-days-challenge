@@ -24,6 +24,7 @@ nav{
     text-transform: uppercase;
     padding: 15px 0;
     text-align: center;
+    margin: 0 5px;
 }
 .options a:hover{
     background-color: rgba(0,255,255,0.5);
@@ -39,7 +40,7 @@ nav{
     background-color: rgba(0,0,0,0.5);
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: right;
     border-bottom: 1px solid rgba(0,0,0,0.6)
 }
 .container{
@@ -58,6 +59,7 @@ nav{
 }
 input{
     font-family: 'Gemunu Libre', sans-serif;
+    margin-right: 20px;
 }
 .backbtn{
     transition: all .25s;
@@ -94,6 +96,7 @@ input{
     .options li{
         display: block;
         width: 100%;
+        margin: 0;
     }
     ul{
         display: none;

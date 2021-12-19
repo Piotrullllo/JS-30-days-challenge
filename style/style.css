@@ -27,7 +27,7 @@ body{
 }
 header h1{
     padding: 24px 0;
-    font-size: 48px;
+    font-size: 44px;
     text-align: center;
 }
 main{
@@ -45,10 +45,11 @@ main{
 }
 .links a{
     display: block;
-    font-size: 24px;
+    font-size: 20px;
     padding: 10px 0;
 }
 footer h2{
+    font-size: 20px;
     text-align: center;
     padding: 24px 0;
     font-weight: 400;
@@ -83,7 +84,7 @@ a{
         margin: 0;
     }
 }
-@media (max-height: 860px) and (min-width: 850px){
+@media (max-height: 760px) and (min-width: 850px){
     #container{
         top: 0;
         transform: translateY(0%) translateX(-50%); 

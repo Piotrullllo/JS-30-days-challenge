@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Clock</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&display=swap" rel="stylesheet">  
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico"/>
+</head>
+<body>
+    <nav class="options">
+        <div><a href="javascript:void(0);" class="toggle">▼</a></div>
+        <ul>
+            <li><a href="javascript:void(0);" data-minutes="0" data-seconds="20">20 secs</a></li>
+            <li><a href="javascript:void(0);" data-minutes="5" data-seconds="0">work 5</a></li>
+            <li><a href="javascript:void(0);" data-minutes="15" data-seconds="0">quick 15</a></li>
+            <li><a href="javascript:void(0);" data-minutes="20" data-seconds="0">snack 20</a></li>
+            <li><a href="javascript:void(0);" data-minutes="60" data-seconds="0">lunch break</a></li>
+            <li><input type="text" placeholder="Enter Minutes"></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="countdown">0:00:00</div>
+        <div class="be-back-at">Be back at <span class="hours">0</span>:<span class="minutes">00</span>:<span class="seconds">00</span></div>
+    </div>
+    <a class="backbtn" href="../../index.html">GO BACK</a>
+    <script src="js/main.js"></script>
+</body>
+</html>

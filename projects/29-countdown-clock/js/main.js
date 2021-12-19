@@ -29,7 +29,6 @@ function getDataFromInput(mins){
 
 function stopBlinking(){
     const button = document.querySelector(".stop-blinking");
-    console.log(button)
     if(button != null){
         window.clearInterval(blinking);
         beBackAt.style.color = "black";

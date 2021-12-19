@@ -83,7 +83,7 @@ input{
 .toggle{
     display: none;
 }
-@media(max-width: 730px){
+@media(max-width: 750px){
     .toggle{
         display: block;
         text-align: center;
@@ -107,5 +107,8 @@ input{
     }
     .options input{
         font-size: 20px;
+    }
+    input{
+        margin-right: 0;
     }
 }

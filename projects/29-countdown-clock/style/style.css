@@ -64,7 +64,7 @@ input{
     font-family: 'Gemunu Libre', sans-serif;
     margin-right: 20px;
 }
-.stop-blinking{
+.stop-alarm{
     background-color: rgba(0,0,0,0.5);
     border-radius: 10px;
     color: white;
@@ -74,7 +74,7 @@ input{
     font-size: 20px;
     text-transform: uppercase;
 }
-.stop-blinking:hover{
+.stop-alarm:hover{
     background-color: rgba(0,255,255,0.5);
     border-radius: 10px;
     color: black;

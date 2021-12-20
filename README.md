@@ -21,6 +21,7 @@ My work is available here: https://piotrullllo.github.io/JS-30-days-challenge/ S
     - Photo from twentieth project by [Bogomil Mihaylov](https://unsplash.com/@bogomi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
 - Taco icon made by [Freepik](https://www.freepik.com) from [Flaticon](www.flaticon.com),
 - Camera sound was taken from [SoundJay](https://www.soundjay.com),
+- Alarm sound was taken from [SoundBible](https://soundbible.com/529-Pager-Beeps.html),
 - [Big Buck Bunny](https://peach.blender.org),
 - [Favicon Generator](https://www.favicon.cc).
   

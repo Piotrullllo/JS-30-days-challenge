@@ -101,7 +101,7 @@ input{
 .toggle{
     display: none;
 }
-@media(max-width: 750px){
+@media(max-width: 780px){
     .toggle{
         display: block;
         text-align: center;

@@ -6,9 +6,6 @@ JavaScript 30 is Vanilla JS course created by [Wes BOS](https://wesbos.com), whi
 
 I recommend them for everyone, who has at least some knowledge in JavaScript and wants to take it further!
 
-## How to access my projects:
-My work is available here: https://piotrullllo.github.io/JS-30-days-challenge/ Select the project from the list and enjoy 😁😊
-
 ## Sources:
 - [JavaScript30](https://javascript30.com),
 - Used font: [Gemunu Libre](https://fonts.google.com/specimen/Gemunu+Libre#standard-styles),
